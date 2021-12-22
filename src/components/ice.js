@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 const Ice = ({ ice }) => {
   const img = {
     height: "400px",

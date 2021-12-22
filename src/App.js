@@ -100,10 +100,28 @@ function App() {
   ////////////////////////
   return (
     <div className="App">
-      <h1>My Ice Cream List</h1>
-      <Link to="/new">
-        <button>Create New Ice Cream</button>
-      </Link>
+      
+      <section class="hero box">
+			<div class="hero-body">
+        <div className="container">
+          <h1 className="title has-text-dark is-size-2 has-text-centered">Mott & Jerry's</h1>
+          <figure className="image">
+            <img src="/images/logo4.png" />
+          </figure>
+          
+          <div className="container has-text-centered">
+            <Link to="/">
+              <button className="button is-success is-light">Home</button>
+            </Link>
+            <Link to="/new">
+              <button className="button is-warning is-light mx-4">Add Ice Cream</button>
+            </Link>
+          </div>
+
+        </div>
+			</div>
+		</section>
+
       <Routes>
         <Route path="/" element={<AllIces ices={ices}/>}/>
         <Route path="/ice/:id" element={<SingleIce

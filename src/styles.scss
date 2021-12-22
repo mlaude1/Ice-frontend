@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat:wght@500&family=Patrick+Hand&display=swap');
+
+// =========================
+// Variables
+// =========================
+$yellowish: #eeebdd;
+
+// =========================
+// Mixins
+// =========================
+
+// =========================
+// Body/Main Styles
+// =========================
+* {
+  box-sizing: border-box;
+  transition: 150ms;
+  margin: 0;
+}
+
+body {
+  // background-image: url("https://i.imgur.com/96b3fcK.jpg");
+  background-color: $yellowish;
+  background-position: center;
+  background-size: cover;
+  min-height: 102vh;
+}
+
+// // HTML Audio tag
+// audio::-webkit-media-controls-enclosure {
+//   border: 2px solid rgba(118, 200, 147, .6); 
+// }
+// audio::-webkit-media-controls-play-button {
+//   background-color: $light-grn;
+//   border-radius: 50%;
+// }
+// audio::-webkit-media-controls-play-button:hover {
+//   transform: scale(1.07);
+//   transition: 250ms;
+// }
+
+// =========================
+// NavBar
+// =========================
+.App {
+  
+  .hero {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2481147.png&f=1&nofb=1");  
+  }
+  
+  h1 {
+    font-family: 'Patrick Hand', cursive;
+  }
+}
+
+
+// =========================
+// Modal
+// =========================
+
+// =========================
+// Ices (Index)
+// =========================
+
+
+// =========================
+// Ices (Show)
+// =========================
+
+
+// =========================
+// Form
+// =========================
