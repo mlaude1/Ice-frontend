@@ -22,7 +22,7 @@ const Ice = ({ ice }) => {
           <div class="card-content">
 
             <div class="content">
-              <h1 className='title has-text-danger has-text-centered is-size-4'>{ice.name}</h1>
+              <h1 className='title notification has-text-danger is-light has-text-centered is-size-4'>{ice.name}</h1>
             </div>
           </div>
         </div>
