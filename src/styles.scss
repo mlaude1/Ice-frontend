@@ -29,7 +29,10 @@ body {
   min-height: 102vh;
 }
 
-// // HTML Audio tag
+// HTML Audio tag
+audio {
+  margin-bottom: 2rem;
+}
 // audio::-webkit-media-controls-enclosure {
 //   border: 2px solid rgba(118, 200, 147, .6); 
 // }
@@ -53,6 +56,11 @@ body {
 
   h1 {
     font-family: 'Patrick Hand', cursive;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
   }
 }
 

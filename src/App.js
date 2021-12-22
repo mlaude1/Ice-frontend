@@ -2,6 +2,7 @@
 import AllIces from "./pages/AllIces";
 import SingleIce from "./pages/SingleIce";
 import Form from "./pages/Form";
+import ModalCard from "./components/ModalCard";
 
 // Import Hooks
 import { useState, useEffect } from "react"
@@ -109,13 +110,16 @@ function App() {
             <img src="/images/logo4.png" />
           </figure>
           
-          <div className="container has-text-centered">
+          <div className="nav has-text-centered">
             <Link to="/">
               <button className="button is-success is-light">Home</button>
             </Link>
             <Link to="/new">
               <button className="button is-warning is-light mx-4">Add Ice Cream</button>
             </Link>
+            
+            <ModalCard />
+
           </div>
 
         </div>
