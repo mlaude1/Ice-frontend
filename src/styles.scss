@@ -3,7 +3,10 @@
 // =========================
 // Variables
 // =========================
+$light-grey: #d3d3d3;
 $yellowish: #eeebdd;
+$pink: #fe739d;
+$blue: #72ddf7;
 
 // =========================
 // Mixins
@@ -47,7 +50,7 @@ body {
   .hero {
     background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2481147.png&f=1&nofb=1");  
   }
-  
+
   h1 {
     font-family: 'Patrick Hand', cursive;
   }
@@ -61,7 +64,34 @@ body {
 // =========================
 // Ices (Index)
 // =========================
+.ices-container {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 2000px;
 
+  .ice:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .ice {
+    margin: 30px 30px;
+    border-radius: 10px;
+    border: solid 7px $pink; 
+    clip-path: polygon( 
+      calc(0% + 5px) calc(0% + 5px), /* top left */
+      calc(100% - 5px) calc(0% + 5px), /* top right */
+      calc(100% - 5px) calc(100% - 5px), /* bottom right */
+      calc(0% + 5px) calc(100% - 5px) /* bottom left */
+    );
+    // transition: clip-path 0.6s linear;
+
+    img {
+      border-bottom: 2px dashed $light-grey;
+    }
+
+  }
+}
 
 // =========================
 // Ices (Show)

@@ -10,10 +10,27 @@ const Ice = ({ ice }) => {
   
   
   return (
-    <div>
+    <div className='ice'>
       <Link to={`/ice/${ice.id}`}>
-        <img style={img} src={ice.image} />
-        <h1>{ice.name}</h1>
+        
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img style={img} src={ice.image} />
+            </figure>
+          </div>
+          <div class="card-content">
+
+            <div class="content">
+              <h1 className='title has-text-danger has-text-centered is-size-4'>{ice.name}</h1>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+
+
       </Link>
     </div>
   )
