@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 const Form = ({ initialIce, handleSubmit, buttonLabel }) => {
   
@@ -24,43 +24,87 @@ const Form = ({ initialIce, handleSubmit, buttonLabel }) => {
   }
 
   return <form onSubmit={handleSubmission}>
-    <h1>Add a new ice cream</h1>
-    <input
-      type="text"
-      onChange={handleChange}
-      value={formData.name}
-      name="name"
-      placeholder="Name"
-    />
-    <input 
-      type="text"
-      onChange={handleChange}
-      value={formData.image}
-      name="image"
-      placeholder="Image"
-    />
-    <input 
-      type="text"
-      onChange={handleChange}
-      value={formData.caption}
-      name="caption"
-      placeholder="Caption"
-    />
-    <input 
-      type="text"
-      onChange={handleChange}
-      value={formData.description}
-      name="description"
-      placeholder="Description"
-    />
-    <input 
-      type="text"
-      onChange={handleChange}
-      value={formData.ingredients}
-      name="ingredients"
-      placeholder="Ingredients"
-    />
-    <input type="submit" value={buttonLabel} />
+    
+    <h1 className="title has-text-centered">Add a new ice cream</h1>
+    
+    <div class="field">
+      <label class="label">Name</label>
+      <div class="control">
+        <input class="input is-rounded" 
+          type="text" 
+          onChange={handleChange}
+          value={formData.name}
+          name="name"
+          placeholder="What's it called?"
+        />
+      </div>
+    </div>
+    
+    <div class="field">
+      <label class="label">Image</label>
+      <div class="control">
+        <input class="input is-rounded" 
+          type="text"
+          onChange={handleChange}
+          value={formData.image}
+          name="image"
+          placeholder="Image URL"
+        />
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Caption</label>
+      <div class="control">
+        <input class="input is-rounded" 
+          type="text"
+          onChange={handleChange}
+          value={formData.caption}
+          name="caption"
+          placeholder="Give it a catchy phrase"
+        />
+      </div>
+    </div>
+    
+    <div class="field">
+      <label class="label">Ingredients</label>
+      <div class="control">
+        <input class="input is-rounded" 
+          type="text"
+          onChange={handleChange}
+          value={formData.ingredients}
+          name="ingredients"
+          placeholder="What's inside?"
+        />
+      </div>
+    </div>
+    
+    <div class="field">
+      <label class="label">Details</label>
+      <div class="control">
+        <textarea class="textarea" 
+          type="text"
+          onChange={handleChange}
+          value={formData.description}
+          name="description"
+          placeholder="Add a description"
+        >
+        </textarea>
+      </div>
+    </div>
+    
+    <br />
+    <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-info">Submit</button>
+      </div>
+      <div class="control">
+        <Link to="/">
+          <button class="button is-info is-light">Cancel</button>
+        </Link>
+      </div>
+    </div>
+    
   </form>
 }
 

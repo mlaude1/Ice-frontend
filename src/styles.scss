@@ -65,7 +65,8 @@ body {
 // Ices (Index)
 // =========================
 .ices-container {
-  margin: auto;
+  // border: 2px dashed blue;
+  margin: 5rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -101,3 +102,7 @@ body {
 // =========================
 // Form
 // =========================
+form {
+  // border: 2px dashed green;
+  margin: 5rem 7rem;
+}

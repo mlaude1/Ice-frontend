@@ -27,10 +27,6 @@ const Ice = ({ ice }) => {
           </div>
         </div>
         
-        
-        
-
-
       </Link>
     </div>
   )
