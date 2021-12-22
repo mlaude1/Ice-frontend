@@ -7,3 +7,4 @@
   - Bulma is wonderful for responsiveness though because it's powered by Flexbox. It's also cool because it's modular
 
 - added audio player for ice cream music just for fun. Utilized Cloudinary
+- added a carousel (taking advantage of React's modular system)

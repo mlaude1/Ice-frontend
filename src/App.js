@@ -117,9 +117,7 @@ function App() {
             <Link to="/new">
               <button className="button is-warning is-light mx-4">Add Ice Cream</button>
             </Link>
-            
             <ModalCard />
-
           </div>
 
         </div>

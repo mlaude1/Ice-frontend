@@ -9,10 +9,6 @@ $pink: #fe739d;
 $blue: #72ddf7;
 
 // =========================
-// Mixins
-// =========================
-
-// =========================
 // Body/Main Styles
 // =========================
 * {
@@ -33,9 +29,9 @@ body {
 audio {
   margin-bottom: 2rem;
 }
-// audio::-webkit-media-controls-enclosure {
-//   border: 2px solid rgba(118, 200, 147, .6); 
-// }
+audio::-webkit-media-controls-enclosure {
+  border: 2px solid $blue; 
+}
 // audio::-webkit-media-controls-play-button {
 //   background-color: $light-grn;
 //   border-radius: 50%;
@@ -53,21 +49,47 @@ audio {
   .hero {
     background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2481147.png&f=1&nofb=1");  
   }
-
   h1 {
     font-family: 'Patrick Hand', cursive;
   }
-
   .nav {
     display: flex;
     justify-content: center;
   }
 }
 
+// =========================
+// Carousel
+// =========================
+#left-arrow:hover, #right-arrow:hover {
+  transform: scale(1.3);
+  color: rgba(0,0,0, .8);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 6px;
+}
 
-// =========================
-// Modal
-// =========================
+#left-arrow {
+  position: absolute;
+  top: 45%;
+  left: -1rem;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+#right-arrow {
+  position: absolute;
+  top: 45%;
+  right: -1rem;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
 
 // =========================
 // Ices (Index)
