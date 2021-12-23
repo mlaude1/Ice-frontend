@@ -115,7 +115,7 @@ function App() {
               <button className="button is-success is-light">Home</button>
             </Link>
             <Link to="/new">
-              <button className="button is-warning is-light mx-4">Add Ice Cream</button>
+              <button className="button is-warning is-light mx-4">Add a Flavor</button>
             </Link>
             <ModalCard />
           </div>
