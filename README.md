@@ -8,3 +8,5 @@
 
 - added audio player for ice cream music just for fun. Utilized Cloudinary
 - added a carousel (taking advantage of React's modular system)
+- styling show page - mix of Bulma and Sass
+- edited modal: fun facts, mix of Bulma (for font colors and size) and Sass (font-family)

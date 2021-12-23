@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat:wght@500&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat:wght@500&family=Dancing+Script:wght@700&family=Patrick+Hand&display=swap');
 
 // =========================
 // Variables
@@ -55,6 +55,16 @@ audio::-webkit-media-controls-enclosure {
   .nav {
     display: flex;
     justify-content: center;
+  }
+}
+
+// =========================
+// Modal
+// =========================
+.modal-card-body {
+
+  span {
+    font-family: 'Dancing Script', cursive;
   }
 }
 
