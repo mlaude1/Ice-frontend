@@ -13,6 +13,12 @@ const AllIces = (props) => {
         </div>
       </section>
 
+      <section className='section'>
+        <div className='container'>
+          <h1 className='title has-text-centered is-size-1 is-underlined notification'>All Flavors</h1>
+        </div>
+      </section>
+
       <div className='ices-container'>
       {props.ices.map((ice) => {
         return <Ice key={ice.id} ice={ice} />
